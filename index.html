@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="no">
+      <li class="add">Hola mundo</li>
+    </ul>
+  </body>
+  <script>
+ 
+  </script>
+  <style>
+      body{
+          box-sizing: border-box;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      /* Estilos requeridos sin usar flex-box */
+    
+    /* .no>li{
+        list-style: none;
+        margin-left:auto;
+        margin-right: auto;
+    } */
+
+    /* ======================= */
+
+    /* Estilos requeridos usando flex-box */
+    .no{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    /* Estilos adicionales (opcional) */
+    .no .add{
+       border-radius: 25px;
+       border: 2px solid #1A2678;
+       color: #1A2678;
+       cursor: pointer;
+       font-size: 20px;
+       font-weight: 400;
+       padding: 10px 25px;
+       text-align: center;
+       transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+       width: 200px;
+    }
+    .no .add:hover{
+        border: 2px solid #1A2678;
+        background-color:#1A2678;
+        color: white;
+
+    }
+  </style>
+</html>
